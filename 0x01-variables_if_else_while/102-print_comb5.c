@@ -1,11 +1,9 @@
 #include <stdio.h>
 
 /**
- *main - Prints combinations of 2 pairs decimal digits using only putchar
- *
- *Description: Prints combinations of 2 pairs of 2 digits using only putchar
- *Return: 0
-*/
+ * main - prints all possible combinations of two two-digit numbers
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int i, j;
@@ -16,17 +14,18 @@ int main(void)
 		{
 			if (i < j)
 			{
-				putchar((i / 10) + '0');
-				putchar((i % 10) + '0');
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
 				putchar(' ');
-				putchar((j / 10) + '0');
-				putchar((j % 10) + '0');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
 				if (i != 98 || j != 99)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
+
 		}
 	}
 	putchar('\n');

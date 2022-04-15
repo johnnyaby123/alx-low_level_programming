@@ -1,25 +1,26 @@
 #include <stdio.h>
 
 /**
- *main - Prints combinations of decimal digits using only putchar
- *
- *Description: Prints combinations of decimal digits using only putchar
- *Return: 0
-*/
+ * main - prints all possible different combinations of two digits
+ * Return: ALways 0 (Success)
+ */
 int main(void)
 {
-	int i, j;
+	int n, m;
 
-	for (i = 48; i <= 57; i++)
+	for (n = 48; n <= 56; n++)
 	{
-		for (j = i + 1; j <= 57; j++)
+		for (m = 49; m <= 57; m++)
 		{
-			putchar(i);
-			putchar(j);
-			if (!(i == 56 && j == 57))
+			if (m > n)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(n);
+				putchar(m);
+				if (n != 56 || m != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}

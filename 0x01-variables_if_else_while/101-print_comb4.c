@@ -1,28 +1,29 @@
 #include <stdio.h>
 
 /**
- *main - Prints combinations of distinct 3 decimal digits using only putchar
- *
- *Description: Prints combinations of distinct 3 digits using only putchar
- *Return: 0
-*/
+ * main - prints all possible different combinations of three digits
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int i, j, k;
+	int n, m, l;
 
-	for (i = 48; i <= 57; i++)
+	for (n = 48; n < 58; n++)
 	{
-		for (j = i + 1; j <= 57; j++)
+		for (m = 49; m < 58; m++)
 		{
-			for (k = j + 1; k <= 57; k++)
+			for (l = 50; l < 58; l++)
 			{
-				putchar(i);
-				putchar(j);
-				putchar(k);
-				if (!(i == 55 && j == 56 && k == 57))
+				if (l > m && m > n)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(n);
+					putchar(m);
+					putchar(l);
+					if (n != 55 || m != 56)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}

@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- *main -  print quote using printf
- *Description: very simple snippet
- *Return: 0
+ * main - prints the phrase with proper grammar,
+ * but the outcome is a piece of art,
+ * Return: 0 if exited properly, non-zero otherwise
  */
 int main(void)
 {
-	printf("%s\n", "with proper grammar, but the outcome is a piece of art,");
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
