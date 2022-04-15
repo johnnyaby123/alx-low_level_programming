@@ -1,17 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - prints the lowercase alphabet in reverse,
- * followed by a new line
- * Return: Always 0 (Success)
- */
+ *main - Prints lowercase letters in reverse order using only putchar
+ *
+ *Description: Prints lowercase letters in reverse order using only putchar
+ *Return: 0
+*/
 int main(void)
 {
-	char ch;
+	int i;
 
-	for (ch = 'z'; ch >= 'a'; ch--)
+	for (i = 122; i >= 97; i--)
 	{
-		putchar(ch);
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);

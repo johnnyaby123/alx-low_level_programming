@@ -1,17 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible combinations of single-digit numbers
- * Return: Always 0 (Success)
- */
+ *main - Prints decimal digits
+ *
+ *Description: Prints decimal digits delimited with comma
+ *and followed by a new line
+ *Return: 0
+*/
 int main(void)
 {
-	int n;
+	int i;
 
-	for (n = 48; n < 58; n++)
+	for (i = 48; i <= 57; i++)
 	{
-		putchar(n);
-		if (n != 57)
+		putchar(i);
+		if (i <= 56)
 		{
 			putchar(',');
 			putchar(' ');
